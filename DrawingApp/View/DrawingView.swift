@@ -15,7 +15,9 @@ public class DrawingView: UIView {
     // An empty implementation adversely affects performance during animation.
    public override func draw(_ rect: CGRect) -> Void
     {
-    createStickFigure().stroke()
+       // createStickFigure().stroke()
+       // drawTurtle()
+        myDraw()
     
     }
     
@@ -43,6 +45,40 @@ public class DrawingView: UIView {
         
         
         return figure
+    }
+    
+    private func drawTurtle() -> Void
+    {
+        let logo = UIBezierPath()
+        UIColor.white.setFill()
+        logo.move(to: CGPoint(x: 50, y: 250))
+        logo.addLine(to: CGPoint(x:100, y: 300))
+        logo.addLine(to: CGPoint(x: 50, y:350))
+        logo.close()
+        logo.fill()
+    }
+    
+    private func myDraw() -> Void
+    {
+        let draw = UIBezierPath()
+        UIColor.cyan.setFill()
+        draw.move(to: CGPoint(x: 50, y: 250))
+        draw.addLine(to: CGPoint(x:100, y: 300))
+        draw.addLine(to: CGPoint(x: 50, y:350))
+        draw.close()
+        draw.fill()
+        
+        draw.move(to: CGPoint(x:100, y:300))
+        draw.addLine(to: CGPoint(x:150, y:350))
+        draw.addLine(to: CGPoint(x:100,y:400))
+        draw.close()
+        draw.fill()
+        
+        draw.move(to: CGPoint(x:50, y:350))
+        draw.addLine(to: CGPoint(x:100, y:400))
+        draw.addLine(to: CGPoint(x:50, y:450))
+        draw.close()
+        draw.fill()
     }
     
 
