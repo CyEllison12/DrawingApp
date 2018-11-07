@@ -14,6 +14,7 @@
 		3135B0A4218B733C0079C069 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3135B0A2218B733C0079C069 /* LaunchScreen.storyboard */; };
 		3135B0AF218B7D1A0079C069 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3135B0AE218B7D1A0079C069 /* DrawingView.swift */; };
 		315B37B6219371F000F22FD5 /* ArtCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B37B5219371F000F22FD5 /* ArtCollectionViewController.swift */; };
+		315B37BA2193822D00F22FD5 /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B37B92193822D00F22FD5 /* ArtCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3135B0A5218B733C0079C069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3135B0AE218B7D1A0079C069 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		315B37B5219371F000F22FD5 /* ArtCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCollectionViewController.swift; sourceTree = "<group>"; };
+		315B37B92193822D00F22FD5 /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				3135B09D218B73330079C069 /* Main.storyboard */,
 				3135B0A2218B733C0079C069 /* LaunchScreen.storyboard */,
 				3135B0AE218B7D1A0079C069 /* DrawingView.swift */,
+				315B37B92193822D00F22FD5 /* ArtCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			files = (
 				3135B0AF218B7D1A0079C069 /* DrawingView.swift in Sources */,
 				3135B09C218B73330079C069 /* CreativityController.swift in Sources */,
+				315B37BA2193822D00F22FD5 /* ArtCell.swift in Sources */,
 				315B37B6219371F000F22FD5 /* ArtCollectionViewController.swift in Sources */,
 				3135B09A218B73330079C069 /* AppDelegate.swift in Sources */,
 			);
