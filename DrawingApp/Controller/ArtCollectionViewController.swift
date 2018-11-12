@@ -22,14 +22,16 @@ public class ArtCollectionViewController: UICollectionViewController
     private let creativeCS : [UIImage?] =
     {
         return [
-            UIImage(named: "CyGalaxy"),
-            UIImage(named: "CyJava"),
-            UIImage(named: "CyMonalisa"),
-            UIImage(named: "CyMTM"),
-            UIImage(named: "CyOctocat"),
-            UIImage(named: "CySwift"),
-            UIImage(named: "CyTriForce"),
-            UIImage(named: "CyTurkey")
+            UIImage(named: "Galaxy"),
+            UIImage(named: "Meme"),
+            UIImage(named: "Java"),
+            UIImage(named: "MTM"),
+            UIImage(named: "Swift"),
+            UIImage(named: "Octocat"),
+            UIImage(named: "Monalisa"),
+            UIImage(named: "TriForce"),
+            UIImage(named: "Turkey")
+
         ]
     }()
     
@@ -37,11 +39,12 @@ public class ArtCollectionViewController: UICollectionViewController
     {
         return [
         "Galaxy",
+        "Meme",
         "Java",
-        "Monlisa",
         "MTM",
-        "Octocat",
         "Swift",
+        "Octocat",
+        "Monlisa",
         "TriForce",
         "Turkey"
         ]
@@ -51,12 +54,6 @@ public class ArtCollectionViewController: UICollectionViewController
     public override func viewDidLoad() -> Void
     {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
     }
@@ -89,7 +86,7 @@ public class ArtCollectionViewController: UICollectionViewController
     {
         return creativeCS.count
     }
-    //MARK:- Load content
+    //MARK:- UICollectViewDataSource
     
     public override func collectionView(_ collectionView: UICollectionView,
                                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
